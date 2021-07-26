@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    background-position: top -200px left -300px, bottom -100px right -350px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+}
+
+main {
+width: 20em;
+background-color: #ffff;
+overflow: hidden;
+text-align: center;
+font-size: 1em;
+border-radius: 2em;
+}
+
+header {
+background-image: url("images/bg-pattern-card.svg");
+position: relative;
+max-width: 100%;
+max-height: 8em;
+object-fit: cover;
+}
+
+picture img {
+margin-top: 5em;
+padding: .3em;
+width: 6em;
+height: em;
+border-radius: 50%;
+object-fit: cover;
+background:white;
+}
+
+figcaption {
+margin-top: 3em;
+padding: 2.2em;
+font-size: 1em;
+font-weight: 400;
+line-height: 1.25em;
+}
+
+figcaption strong {
+    font-weight: 700;
+}
+
+section {
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+align-items: center;
+font-size: 1em;
+border-top: 1.8px ridge #ededed;
+}
+
+section dl {
+    margin-right: 1.2em;
+    margin: 1.5em;
+}
+section dt {
+    font-weight: 700;
+}
+
+section dd {
+    font-weight: 400;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 3em;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 376px) and (max-width: 1439px) {
+    body {
+        background-position: top -700px left -300px, bottom -650px right -300px;
+        background-size: 1050px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    body {
+        background-position: top -700px left -400px, bottom -700px right -380px;
+        background-size: 1200px;
+    }
+
+    main {
+       max-width: 100%;
+       height: fit-content;
+       font-size: .95em;
+    }
+
+
+    section {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    body {
+        background-position: top -260px left -360px, bottom -260px right -360px;
+        background-size: 500px;
+
+    }
+
+    main {
+       max-width: 100%;
+       max-height: fit-content;
+       font-size: .85em;
+    }
+
+
+    section {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: .85em;
+    }
+}
+
