@@ -33,26 +33,25 @@ font-size: 1em;
 border-radius: 2em;
 }
 
-header {
-background-image: url("/images/bg-pattern-card.svg");
+header[alt="background-image"] {
 position: relative;
 max-width: 100%;
 max-height: 8em;
 object-fit: cover;
 }
 
-picture img {
-margin-top: 5em;
+picture img{
+margin-top: -3em;
 padding: .3em;
 width: 6em;
-height: em;
+height: auto;
 border-radius: 50%;
 object-fit: cover;
 background:white;
 }
 
 figcaption {
-margin-top: 3em;
+margin-top: auto;
 padding: 2.2em;
 font-size: 1em;
 font-weight: 400;
@@ -94,18 +93,101 @@ footer a {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 376px) and (max-width: 1439px) {
+
+@media (max-width: 360px) {
+    
     body {
-        background-position: top -700px left -300px, bottom -650px right -300px;
-        background-size: 1050px;
+        background-position: top -250px left -290px, bottom -250px right -280px;
+        background-size: 500px;
+
+    }
+
+    main {
+       max-width: 100%;
+       max-height: fit-content;
+       font-size: .95em;
+    }
+
+
+    section {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: .85em;
+    }
+}
+@media (min-width: 361px) and (max-width: 600px) {
+
+    body {
+    background-position: top -700px left -700px, bottom -700px right -700px;
+    background-size: 1200px;
+    }
+
+    main {
+    max-width: 100%;
+    height: fit-content;
+    font-size: 1em;
+    }
+
+    section {
+    font-size: 1em;
+    }
+
+    footer {
+    font-size: 1em;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 601px) and (max-width: 800px) {
 
     body {
-        background-position: top -700px left -400px, bottom -700px right -380px;
-        background-size: 1200px;
+    background-position: top -600px left -700px, bottom -600px right -700px;
+    background-size: 1000px;
+    }
+
+    main {
+    max-width: 100%;
+    height: fit-content;
+    font-size: 1em;
+    }
+
+    section {
+    font-size: 1em;
+    }
+
+    footer {
+    font-size: 1em;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1280px) {
+
+    body {
+    background-position: top -1000px left -700px, bottom -1000px right -700px;
+    background-size: 1500px;
+    }
+
+    main {
+    max-width: 100%;
+    height: fit-content;
+    font-size: 1em;
+    }
+
+    section {
+    font-size: 1em;
+    }
+
+    footer {
+    font-size: 1em;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+    body {
+        background-position: top -900px left -700px, bottom -900px right -700px;
+        background-size: 1500px;
     }
 
     main {
@@ -117,30 +199,6 @@ footer a {
 
     section {
         font-size: 1em;
-    }
-}
-
-@media (max-width: 320px) {
-    
-    body {
-        background-position: top -260px left -360px, bottom -260px right -360px;
-        background-size: 500px;
-
-    }
-
-    main {
-       max-width: 100%;
-       max-height: fit-content;
-       font-size: .85em;
-    }
-
-
-    section {
-        font-size: 1em;
-    }
-
-    footer {
-        font-size: .85em;
     }
 }
 
