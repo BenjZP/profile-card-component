@@ -21,7 +21,7 @@ body {
     background-position: top -200px left -300px, bottom -100px right -350px;
     background-size: 500px;
     background-repeat: no-repeat;
-    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
 }
 
 main {
@@ -34,7 +34,7 @@ border-radius: 2em;
 }
 
 header {
-background-image: url("images/bg-pattern-card.svg");
+background-image: url("./images/bg-pattern-card.svg");
 position: relative;
 max-width: 100%;
 max-height: 8em;
